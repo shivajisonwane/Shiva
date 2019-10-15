@@ -1,0 +1,31 @@
+
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstancesConnecting.html
+
+If you use PuTTY to connect to your instance
+
+Verify that your private key (.pem) file has been converted to the format recognized by PuTTY (.ppk). For more information about converting your private key, see Connecting to Your Linux Instance from Windows Using PuTTY.
+
+Note
+
+In PuTTYgen, load your private key file and select Save Private Key rather than Generate.
+
+Verify that you are connecting with the appropriate user name for your AMI. Enter the user name in the Host name box in the PuTTY Configuration window.
+
+For Amazon Linux 2 or the Amazon Linux AMI, the user name is ec2-user.
+
+For a CentOS AMI, the user name is centos.
+
+For a Debian AMI, the user name is admin or root.
+
+For a Fedora AMI, the user name is ec2-user or fedora.
+
+For a RHEL AMI, the user name is ec2-user or root.
+
+For a SUSE AMI, the user name is ec2-user or root.
+
+For an Ubuntu AMI, the user name is ubuntu.
+
+Otherwise, if ec2-user and root don't work, check with the AMI provider.
+
+Verify that you have an inbound security group rule to allow inbound traffic to the appropriate port. For more information, see Authorizing Network Access to Your Instances.
